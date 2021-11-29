@@ -12,6 +12,10 @@
     "scanning",
     "effects"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fenghuijiuzhuan/amap-scan-radar.git"
+  },
   "author": "yvangod",
   "license": "ISC"
 }
