@@ -1,10 +1,11 @@
 {
   "name": "amap-scan-radar",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Amap radar scanning effects",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "keywords": [
     "Amap",
@@ -17,5 +18,15 @@
     "url": "https://github.com/fenghuijiuzhuan/amap-scan-radar.git"
   },
   "author": "yvangod",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-transform-runtime": "^7.16.4",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/runtime": "^7.16.3",
+    "babel-loader": "^8.2.3",
+    "babel-polyfill": "^6.26.0",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
+  }
 }

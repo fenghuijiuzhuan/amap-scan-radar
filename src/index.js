@@ -1,9 +1,9 @@
 /*
- * @path        : \amap-scan-radar\index.js
+ * @path        : \amap-scan-radar\src\index.js
  * @message     : 
  * @Author      : yvangod
  */
-class ShowRadar {
+export default class ShowRadar {
   constructor(map, x, y, radius = 10000) {
     this.map = map
     this.radius = radius
@@ -91,4 +91,3 @@ class ShowRadar {
   }
 }
 
-exports.AmapRadar = ShowRadar
