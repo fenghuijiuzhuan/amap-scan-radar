@@ -90,4 +90,3 @@ export default class ShowRadar {
     this.map.remove(this.bound)
   }
 }
-

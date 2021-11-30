@@ -1,4 +1,14 @@
-/******/ (() => { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define("AMapScanRadar", [], factory);
+	else if(typeof exports === 'object')
+		exports["AMapScanRadar"] = factory();
+	else
+		root["AMapScanRadar"] = factory();
+})(self, function() {
+return /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	// The require scope
 /******/ 	var __webpack_require__ = {};
@@ -23,7 +33,35 @@
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-/* unused harmony export default */
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ ShowRadar)
+});
+
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/createClass.js
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+;// CONCATENATED MODULE: ./src/index.js
 
 
 
@@ -32,7 +70,7 @@ var __webpack_exports__ = {};
  * @message     : 
  * @Author      : yvangod
  */
-var ShowRadar = /*#__PURE__*/(/* unused pure expression or super */ null && (function () {
+var ShowRadar = /*#__PURE__*/function () {
   function ShowRadar(map, x, y) {
     var radius = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 10000;
 
@@ -138,8 +176,11 @@ var ShowRadar = /*#__PURE__*/(/* unused pure expression or super */ null && (fun
   }]);
 
   return ShowRadar;
-}()));
+}();
 
 
+__webpack_exports__ = __webpack_exports__["default"];
+/******/ 	return __webpack_exports__;
 /******/ })()
 ;
+});
