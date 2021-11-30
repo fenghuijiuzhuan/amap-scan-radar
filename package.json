@@ -1,6 +1,6 @@
 {
   "name": "amap-scan-radar",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Amap radar scanning effects",
   "main": "dist/index.js",
   "scripts": {
